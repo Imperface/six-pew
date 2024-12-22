@@ -1,4 +1,4 @@
-import { device } from "@/shared/constants/device";
+import { device } from "@/constants/device";
 import { styled } from "styled-components";
 
 export const ContainerWrapper = styled.div`
