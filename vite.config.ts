@@ -7,6 +7,6 @@ export default defineConfig({
       "@": "/src",
     },
   },
-  base: "/six-pew/",
+  base: "/six-pew",
   plugins: [react()],
 });
