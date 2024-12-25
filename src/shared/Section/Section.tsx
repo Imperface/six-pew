@@ -7,7 +7,7 @@ export const Section = ({
   children,
 }: {
   className: string;
-  children: React.JSX.Element;
+  children: React.JSX.Element | React.JSX.Element[];
 }) => {
   return (
     <SectionWrapper className={className}>
