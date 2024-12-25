@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "@/images/droneHero.webp";
+// import img from "@/images/droneHero.webp";
 export const HomeWrapper = styled.div`
   color: ${({ theme }) => theme.main};
   & .hero__section {
