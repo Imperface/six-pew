@@ -1,20 +1,29 @@
 import { Section } from "@/shared/Section";
 import { HomeWrapper } from "./Home.styled";
 import { GiSwallow } from "react-icons/gi";
+// import { TbDrone } from "react-icons/tb";
 
+import mavicPro from "@/images/mavicPro.webp";
 const Home = () => {
   return (
-    <HomeWrapper>
+    <HomeWrapper className="home__wrapper">
       <Section className="hero__section">
-        <h1 className="hero__title">
-          The steel swallow is a symbol of the Unmanned Systems Forces
-        </h1>
         <div className="hero__description">
-          <GiSwallow className="hero__description-icon" />
-          <p className="hero__description-text">
-            Bring victory closer together with the 230th separate logistics
-            battalion
-          </p>
+          <h1 className="hero__description-title">
+            The steel swallow is a symbol of the Unmanned Systems Forces
+          </h1>
+
+          <div className="hero__description-info hero__info">
+            <GiSwallow className="hero__info-icon" />
+            <p className="hero__info-text">
+              Bring victory closer together with the 230th separate logistics
+              battalion
+            </p>
+          </div>
+        </div>
+
+        <div className="hero__addition">
+          <img className="hero__addition-image" src={mavicPro} alt="" />
         </div>
       </Section>
     </HomeWrapper>

@@ -1,6 +1,9 @@
 import { NavLink } from "react-router";
 import { HeaderWrapper } from "./Header.styled";
 import { ROUTES_KEY } from "@/constants/ROUTES_KEY";
+import { FaClipboardList } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa";
+import { IoHomeSharp } from "react-icons/io5";
 
 export const Header = () => {
   return (
@@ -8,13 +11,22 @@ export const Header = () => {
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__item">
-            <NavLink to={ROUTES_KEY.HOME_ROUTE}>Home</NavLink>
+            <NavLink className="nav__link" to={ROUTES_KEY.HOME_ROUTE}>
+              <IoHomeSharp />
+              Home
+            </NavLink>
           </li>
-          <li>
-            <NavLink to={ROUTES_KEY.ABOUT_US_ROUTE}>About Us</NavLink>
+          <li className="nav__item">
+            <NavLink className="nav__link" to={ROUTES_KEY.ABOUT_US_ROUTE}>
+              <FaInfoCircle />
+              About Us
+            </NavLink>
           </li>
-          <li>
-            <NavLink to={ROUTES_KEY.VACANCIES_ROUTE}>Vacancies</NavLink>
+          <li className="nav__item">
+            <NavLink className="nav__link" to={ROUTES_KEY.VACANCIES_ROUTE}>
+              <FaClipboardList />
+              Vacancies
+            </NavLink>
           </li>
         </ul>
       </nav>
